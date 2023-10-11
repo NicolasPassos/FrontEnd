@@ -1,11 +1,12 @@
 import flet as ft
-from webMenu import menu
+from webMenu import *
+from portalMenu import *
 
 def main(page: ft.Page):
     # Definindo orientação da página
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
-    page.add(menu)
+    page.add(webMenu)
     
     page.update()
 

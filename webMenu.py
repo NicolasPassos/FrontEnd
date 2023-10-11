@@ -1,9 +1,8 @@
 import flet as ft
 
-menu = ft.AppBar(
+webMenu = ft.AppBar(
     toolbar_height=50,
-    title=ft.Row([
-        ft.Image('unnamed.png',width=100,height=50)
+    title=ft.Row([ft.Image('unnamed.png',width=100,height=50)
         ,
         ft.Container(
             content=ft.ElevatedButton('Home',
@@ -49,7 +48,11 @@ menu = ft.AppBar(
                                                             ),
                                         height=50
                                         )
-                        ),
+                        )
+                      ],
+                      spacing=1),
+
+    actions=[ft.Row([
         ft.Container(
             content=ft.TextField(label='Pesquisar',
                                  suffix_icon=ft.icons.SEARCH,
@@ -103,5 +106,5 @@ menu = ft.AppBar(
                              )
                         )
                         ],
-                        spacing=1)
+                        spacing=1)]
     )
